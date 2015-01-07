@@ -1,0 +1,52 @@
+p {
+    @extend %legible;
+    margin-bottom: .75em;   
+    
+    &:last-child {
+        margin-bottom: 0;
+    }
+    
+    &.hook {
+        font-size: 1.3em;
+    }
+    
+    &.quote {
+        font-style: italic;
+    }
+
+    &.fr {
+        text-align: right;
+        float: right;
+    }
+}
+
+strong {
+    font-weight: normal;
+}
+
+span {
+    
+    &.super {
+        @extend %superscript;
+    }
+    
+    &.reg:after {
+        @extend %superscript;
+        content: "\00ae";
+    }
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: normal;
+    margin: .3em 0 .8em 0;
+}
+
+#site-content ul {
+    @extend %legible;
+    padding-left: 1.5em;
+    list-style-position: outside;
+    list-style-type: square;
+    margin-bottom: 1.5em;
+}

@@ -1,0 +1,43 @@
+#site-nav {
+    font-size: .9em;
+    width: 100%;
+    background: $bg-wt-color;
+    height: 3em;
+    position: relative;
+    
+    ul {
+        @extend %clearfix;
+        list-style-type: none;
+        display: inline-block;
+        padding-top: 1em;
+        
+        &:nth-child(2) {
+            float: right;
+        }
+    }
+    
+    li {
+        float: left;
+        text-transform: uppercase;
+        padding: 0 1em;
+        border-right: 1px solid $link-color;
+        
+        &.active a {
+            color: $link-hover-color;
+        }
+        
+        &:last-child {
+            border: none;
+        }
+    }
+    
+    // animation
+    transition: all .2s ease-in-out;
+    opacity: 0;
+    top: -3em;
+    
+    &.loaded {
+        top: 0;
+        opacity: 1;
+    }
+}

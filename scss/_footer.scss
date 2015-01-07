@@ -1,0 +1,12 @@
+#site-footer {
+    font-size: .7em;
+    width: 100%;
+    position: absolute;
+    height: 3em;
+    bottom: 0;
+    background: $white;
+    
+    &.hidden {
+        display: none;
+    }
+}

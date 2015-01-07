@@ -1,0 +1,27 @@
+@import 'vars';
+@import 'iosfix';
+@import 'helpers';
+@import 'typography';
+@import 'navigation';
+@import 'header';
+@import 'footer';
+@import 'content';
+
+#main {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding-bottom: 4em;
+}
+
+#site-loader {
+    transition: opacity .3s ease-in-out;
+    opacity: 1;
+    
+    &.hidden {
+        opacity: 0;
+    }
+}

@@ -1,0 +1,19 @@
+%clearfix {
+  overflow: auto;
+  zoom: 1;
+}
+
+%superscript {
+    position: relative;
+    font-size: .7em;
+    bottom: .3em;
+}
+
+%legible {
+    line-height: 1.5em;
+}
+
+.wrap {
+    max-width: 960px;
+    margin: 0 auto;
+}
