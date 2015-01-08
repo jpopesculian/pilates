@@ -223,14 +223,6 @@
             "msrc": "img/gallery/reformer-stretch.jpg",
             "title": "Image Caption",
             "alt": "reformer-stretch"
-        },
-        {
-            "src": "img/gallery/wundachair-woman.jpg",
-            "w": 432,
-            "h": 324,
-            "msrc": "img/gallery/wundachair-woman.jpg",
-            "title": "Image Caption",
-            "alt": "wundachair-woman"
         }
     ],
     "options": {

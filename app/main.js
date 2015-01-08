@@ -5,7 +5,8 @@ define([], function() {
     require.config({
         paths: {
             'text': '../js/vendor/require/text',
-            'router': '../js/vendor/require/router'
+            'router': '../js/vendor/require/router',
+            'async': '../js/vendor/require/async',
         }
     });
     
