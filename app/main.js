@@ -9,13 +9,11 @@ define([], function() {
         }
     });
     
-    require(['text!partials/wrapper.html', 'text!../css/main.css', 'text!../img/logo.jpg'],
-           function (wrapper, css) {
+    require(['text!partials/wrapper.html', 'modules/css-insert', 'text!../css/main.css', 'text!../img/logo.jpg'],
+           function (wrapper, cssInsert, css) {
         
         // inject stylesheet
-        var style = document.createElement('style');
-        style.innerHTML = css;
-        document.getElementsByTagName('head')[0].appendChild(style);
+        cssInsert(css);
         
         // inject wrapper
         document.getElementById('main').innerHTML = wrapper;
