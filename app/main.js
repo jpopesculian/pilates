@@ -9,21 +9,36 @@ define([], function() {
         }
     });
     
-    require(['text!partials/wrapper.html', 'modules/css-insert', 'text!../css/main.css', 'text!../img/logo.jpg'],
-           function (wrapper, cssInsert, css) {
+    require(['text!partials/wrapper.html',
+             'modules/get-scrollbarwidth',
+             'modules/css-insert', 
+             'text!../css/main.css', 
+             'text!../img/logo.jpg'],
+           function (wrapper, getScrollbarwidth, cssInsert, css) {
         
         // inject stylesheet
         cssInsert(css);
         
         // inject wrapper
-        document.getElementById('main').innerHTML = wrapper;
+        var main = document.getElementById('main');
+        main.innerHTML = wrapper;
         
         // create elements for route injection
         var viewContainer = document.getElementById('site-content');
         var loader = document.getElementById('site-loader');
         var footer = document.getElementById('site-footer');
-        var navListItems = document.getElementById('site-nav').getElementsByTagName('li');
+        var header = document.getElementById('site-header');
+        var nav = document.getElementById('site-nav');
+        var navListItems = nav.getElementsByTagName('li');
         navListItems.forEach = Array.prototype.forEach;
+        
+        // fix padding for scrollbar
+        var scrollbarwidth = getScrollbarwidth();
+        nav.style.paddingRight = scrollbarwidth + "px";
+        header.style.paddingRight = scrollbarwidth + "px";
+        viewContainer.style.right = scrollbarwidth/2 + "px";
+        footer.style.paddingRight = scrollbarwidth + "px";
+        
         
         // set to home route if no route set
         document.location.hash = document.location.hash || "#/home";

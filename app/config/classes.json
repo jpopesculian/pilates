@@ -1,0 +1,71 @@
+{
+    "rows": [
+        {
+            "time": "10-10:50am",
+            "schedule": [
+                "Tower",
+                "",
+                "Tower",
+                "",
+                "Tower",
+                "Mat 2"
+            ]
+        },
+        {
+            "time": "10:30-11:20am",
+            "schedule": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "time": "12-12:50pm",
+            "schedule": [
+                "",
+                "",
+                "",
+                "",
+                "Tower",
+                ""
+            ]
+        },
+        {
+            "time": "5-5:50pm",
+            "schedule": [
+                "Tower",
+                "",
+                "",
+                "Tower",
+                "",
+                ""
+            ]
+        },
+        {
+            "time": "6-6:50pm",
+            "schedule": [
+                "",
+                "",
+                "Mat 2",
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "time": "7-7:50pm",
+            "schedule": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        }
+    ],
+    "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+}

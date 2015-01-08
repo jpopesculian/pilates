@@ -1,0 +1,77 @@
+.schedule {
+    color: $bold-color;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    text-align: center;
+    
+    td {
+        padding: .5em;
+    }
+    
+    thead {
+        font-weight: bold;
+        
+        td {
+            padding: 1em;
+        }
+    }
+    
+    tbody {
+        td {
+            font-size: 1.2em;
+            border: 1px solid $link-color;
+            
+            &:first-child {
+                font-size: 1em;
+                text-align: left;
+                text-transform: none;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.rates {
+    font-size: 1.1em;
+    margin-top: -1.5em;
+    
+    td {
+        text-align: center;
+        padding: .3em;
+    }
+    
+    thead {
+        text-transform: uppercase;
+        color: $bold-color;
+        font-weight: bold;
+        
+        td {
+            padding-bottom: .5em;
+        }
+    }
+    
+    tbody {
+        
+        td {
+            
+            &:first-child {
+                text-align: left;
+                color: $bold-color;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+.descriptions {
+    td {
+        line-height: 1.5em;
+        padding-bottom: .3em;
+    }
+    td:first-child {
+        vertical-align: top;
+        font-weight: bold;
+        padding-right: 1em;
+    }
+}

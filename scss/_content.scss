@@ -3,6 +3,7 @@
     position: relative;
     @extend .wrap;
     height: auto;
+    width: 100vw;
     
     article {
         @extend %clearfix;
@@ -55,7 +56,7 @@
         @extend %clearfix;
         
         &:last-child {
-            padding-right: none;
+            padding-right: 1px;
         }
     }
     
@@ -108,6 +109,16 @@
     .col-4-5 {
         @extend .col;
         width: 100%*(4/5);
+    }
+    
+    .separated {
+        border-left: 1px dotted $link-color;
+        padding: 4em 0;
+
+        > div {
+            display: table;
+            margin: 0 auto;
+        }
     }
 }
 
