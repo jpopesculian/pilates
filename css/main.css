@@ -109,7 +109,8 @@ h3 {
   color: #58595b;
   font-size: 1.1em;
   text-transform: uppercase;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 1em; }
   .schedule td {
     padding: .5em; }
   .schedule thead {
@@ -195,14 +196,35 @@ h3 {
     opacity: 1; }
 
 #site-footer {
-  font-size: .7em;
+  font-size: .8em;
   width: 100%;
   position: absolute;
-  height: 3em;
+  min-height: 3em;
   bottom: 0;
   background: white; }
   #site-footer.hidden {
     display: none; }
+  #site-footer address {
+    display: inline-block; }
+  #site-footer .general-info {
+    float: right;
+    margin-top: 1em; }
+  #site-footer .social-media-icon {
+    float: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 1.5em;
+    width: 1.5em;
+    text-indent: -9999px;
+    margin: .75em .2em;
+    opacity: .7;
+    transition: opacity .2s; }
+    #site-footer .social-media-icon:hover {
+      opacity: 1; }
+    #site-footer .social-media-icon.facebook {
+      background-image: url("img/facebook.jpg"); }
+    #site-footer .social-media-icon.twitter {
+      background-image: url("img/twitter.jpg"); }
 
 #site-content {
   position: relative;
@@ -295,7 +317,7 @@ span.img-desc {
   .photo-gallery figcaption {
     display: none; }
 
-address {
+#site-content address {
   font-size: 1.2em;
   line-height: 1.5em;
   margin: 1.5em;

@@ -1,12 +1,44 @@
 #site-footer {
-    font-size: .7em;
+    font-size: .8em;
     width: 100%;
     position: absolute;
-    height: 3em;
+    min-height: 3em;
     bottom: 0;
     background: $white;
     
     &.hidden {
         display: none;
+    }
+    
+    address {
+        display: inline-block;
+    }
+    
+    .general-info {
+        float: right;
+        margin-top: 1em;
+    }
+    
+    .social-media-icon {
+        float: left;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 1.5em;
+        width: 1.5em;
+        text-indent: -9999px;
+        margin: .75em .2em;
+        
+        opacity: .7;
+        transition: opacity .2s;
+        &:hover {
+            opacity: 1;
+        }
+    
+        &.facebook {
+            background-image: url('img/facebook.jpg');
+        }
+        &.twitter {
+            background-image: url('img/twitter.jpg');
+        }
     }
 }
