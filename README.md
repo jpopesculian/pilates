@@ -18,7 +18,7 @@ Vendor javascript is located in the `js/` folder. `index.html` asynchronously lo
 
 ## Editing
 
-To Edit the views (aka: the main pages) and text, edit the `*.html` files directly in the `app/views/` folder. 
+To Edit the views (aka: the main pages) and text, edit the `*.html` files directly in the `app/views/` or `app/partials/` folder. Metadata however should be added to `index.html`.
 
 ### CSS
 
