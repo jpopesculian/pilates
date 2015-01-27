@@ -2,91 +2,35 @@
     "rows": [
         {
             "time": "10-10:50am",
-            "schedule": [
-                "Tower",
-                "",
-                "Tower",
-                "",
-                "Tower",
-                "Mat 2"
-            ]
+            "schedule": ["Tower", "", "Tower", "", "Tower", "Mat 2"]
         },
         {
             "time": "10:30-11:20am",
-            "schedule": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ]
+            "schedule": ["", "", "", "", "", ""]
         },
         {
             "time": "11-11:50am",
-            "schedule": [
-                "",
-                "",
-                "Mat 1",
-                "",
-                "",
-                ""
-            ]
+            "schedule": ["", "", "Mat 1", "", "", ""]
         },
         {
             "time": "12-12:50pm",
-            "schedule": [
-                "",
-                "",
-                "",
-                "Mat 1",
-                "Tower",
-                ""
-            ]
+            "schedule": ["", "", "", "Mat 1", "Tower", ""]
         },
         {
             "time": "5-5:50pm",
-            "schedule": [
-                "",
-                "",
-                "",
-                "Tower",
-                "",
-                ""
-            ]
+            "schedule": ["", "", "", "Tower", "", ""]
         },
         {
             "time": "6:15-7:05pm",
-            "schedule": [
-                "Tower",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ]
+            "schedule": ["Tower", "", "", "", "", ""]
         },
         {
             "time": "6-6:50pm",
-            "schedule": [
-                "",
-                "",
-                "Mat 2",
-                "",
-                "",
-                ""
-            ]
+            "schedule": ["", "", "Mat 2", "", "", ""]
         },
         {
             "time": "7-7:50pm",
-            "schedule": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ]
+            "schedule": ["", "", "", "", "", ""]
         }
     ],
     "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
